@@ -14,6 +14,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <version.junit>3.8.1</version.junit>
     <version.liquibase-core>4.25.1</version.liquibase-core>
+    <postgresql.version>42.7.1</postgresql.version>
   </properties>
 
   <dependencies>
@@ -29,6 +30,24 @@
       <artifactId>liquibase-core</artifactId>
       <version>${version.liquibase-core}</version>
     </dependency>
+    <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>${postgresql.version}</version>
+    </dependency>
+
 
   </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
