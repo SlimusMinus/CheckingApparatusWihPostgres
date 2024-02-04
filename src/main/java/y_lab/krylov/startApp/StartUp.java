@@ -3,6 +3,8 @@ package y_lab.krylov.startApp;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * start this App*/
 public class StartUp {
     public static int getChoice(){
         Scanner in = new Scanner(System.in);

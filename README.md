@@ -1,6 +1,7 @@
 Открываем проект
 Запускаем docker-compose.yml
-Создаем подключение к БД (порт - 333, user - username, password - password)
+Создаем подключение к БД (port - 777, user - username, password - password)
+Создаем новую схему Schema_DB
 Запускаем файл src/main/java/App
 При повторном запуске можно закомитить подключение к БД (первая строчка в Main)
 Следуем инструкциям в консоли

@@ -12,9 +12,13 @@ import java.sql.ResultSet;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * the main class is where all the work happens
+ * @author Alexandr Krylov
+ * @version 1.0*/
 public class App {
     public static void main(String[] args) {
-        //DataBase.startDatabase();
+        DataBase.startDatabase();
         Scanner in = new Scanner(System.in);
         ShowReadings showReadings = new ShowReadingsImplemets();
         int exit = 0;
@@ -81,5 +85,6 @@ public class App {
         } while (exit == 0);
 
     }
+
 
 }

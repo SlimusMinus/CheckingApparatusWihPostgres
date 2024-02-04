@@ -8,6 +8,8 @@ import java.sql.SQLException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
+/**
+ * check readings*/
 public class CheckMonthImplementation implements CheckMonth{
     @Override
     public boolean checkMonth(int month, int year) {

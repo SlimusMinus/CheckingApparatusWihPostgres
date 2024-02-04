@@ -7,6 +7,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+/**
+ * get all users in database*/
 public class GetAllUsersImplements implements GetAllUsers{
     @Override
     public ResultSet getAllUsers() throws SQLException {
@@ -15,13 +17,5 @@ public class GetAllUsersImplements implements GetAllUsers{
         Statement statement = connection.createStatement();
         ResultSet resultSet = statement.executeQuery(allUsers);
         return resultSet;
-    }
-
-    public void printAllRecords() throws SQLException {
-        ResultSet resultSet1 = getAllUsers();
-        while (resultSet1.next()){
-            System.out.println(resultSet1.getString("login"));
-        }
-
     }
 }

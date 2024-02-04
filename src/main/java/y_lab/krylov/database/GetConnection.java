@@ -7,6 +7,10 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
 
+/**
+ * database connection
+ */
+
 public class GetConnection {
 
     private static Connection connection;

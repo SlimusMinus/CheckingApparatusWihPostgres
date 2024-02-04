@@ -3,6 +3,8 @@ package y_lab.krylov.readinds;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+/**
+ * show readings*/
 public class ShowReadingsImplemets implements ShowReadings{
     @Override
     public void printActualReadings(ResultSet resultSet)  {

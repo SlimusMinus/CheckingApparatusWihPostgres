@@ -7,6 +7,7 @@
         xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
         logicalFilePath="dp.changelog">
 
+
     <include file="user/001-create-changeset-User-table.xml" relativeToChangelogFile="true"/>
     <include file="user/001-insert-changeset-User-table.xml" relativeToChangelogFile="true"/>
     <include file="userReadings/create-table-userReadings-changeset-001.xml" relativeToChangelogFile="true"/>

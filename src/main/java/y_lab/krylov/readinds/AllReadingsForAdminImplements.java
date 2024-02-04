@@ -8,6 +8,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+/**
+ * get all readings for admin*/
 public class AllReadingsForAdminImplements implements AllReadingsForAdmin{
     @Override
     public void getAllReadings() {

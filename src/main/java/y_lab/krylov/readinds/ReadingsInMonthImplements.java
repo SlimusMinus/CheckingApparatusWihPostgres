@@ -8,6 +8,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+/**
+ * get readings in specific month*/
 public class ReadingsInMonthImplements implements ReadingsInMonth{
 
     @Override
