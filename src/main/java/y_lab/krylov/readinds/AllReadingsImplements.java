@@ -8,6 +8,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+/**
+ * get all readings for a specific user*/
 public class AllReadingsImplements implements AllReadings {
     @Override
     public ResultSet getAllReadings() {

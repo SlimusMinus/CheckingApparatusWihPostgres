@@ -8,6 +8,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+/**
+ * get all last readings user*/
+
 public class ActualReadingsImplements implements ActualReadings {
 
     @Override

@@ -11,6 +11,11 @@ import java.util.Date;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * set readings for specific user
+ * check date specific month
+ * check date on now and latter date*/
+
 public class SetReadingsImplements implements SetReadings{
     private Scanner in = new Scanner(System.in);
     @Override
@@ -40,6 +45,7 @@ public class SetReadingsImplements implements SetReadings{
             System.out.println("Input year");
             int year = in.nextInt();
             LocalDate date = LocalDate.of(year, month, day);
+
             if(LocalDate.now().isBefore(date)){
                 System.out.println("Incorrect input data");
             }

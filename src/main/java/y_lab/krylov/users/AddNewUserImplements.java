@@ -9,6 +9,8 @@ import java.sql.SQLException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * add new user in our database*/
 public class AddNewUserImplements implements AddNewUser{
     private Scanner in = new Scanner(System.in);
     @Override

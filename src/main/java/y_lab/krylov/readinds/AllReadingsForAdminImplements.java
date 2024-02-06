@@ -1,13 +1,14 @@
 package y_lab.krylov.readinds;
 
 import y_lab.krylov.database.GetConnection;
-import y_lab.krylov.login_to_app.AuthorizationImplements;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+/**
+ * get all readings for admin*/
 public class AllReadingsForAdminImplements implements AllReadingsForAdmin{
     @Override
     public void getAllReadings() {

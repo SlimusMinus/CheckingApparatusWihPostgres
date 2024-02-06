@@ -7,8 +7,8 @@
         xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
         logicalFilePath="db.changelog/">
 
-        <changeSet id="insert_into_User" author="Alexandr_Krylov">
-            <insert tableName="users">
+        <changeSet id="11111111" author="Alexandr_Krylov">
+            <insert tableName="users" schemaName="Schema_DB">
                 <column name="login" value="admin"/>
                 <column name="password" value="admin"/>
                 <column name="name" value="Pol"/>
@@ -16,7 +16,7 @@
                 <column name="city" value="London"/>
             </insert>
 
-            <insert tableName="users">
+            <insert tableName="users" schemaName="Schema_DB">
                 <column name="login" value="Tom"/>
                 <column name="password" value="Tom"/>
                 <column name="name" value="Tom"/>
@@ -24,7 +24,7 @@
                 <column name="city" value="Moscow"/>
             </insert>
 
-            <insert tableName="users">
+            <insert tableName="users" schemaName="Schema_DB">
                 <column name="login" value="Kris"/>
                 <column name="password" value="Kris"/>
                 <column name="name" value="Kris"/>
@@ -32,7 +32,7 @@
                 <column name="city" value="Tokyo"/>
             </insert>
 
-            <insert tableName="users">
+            <insert tableName="users" schemaName="Schema_DB">
                 <column name="login" value="Jack"/>
                 <column name="password" value="Jack"/>
                 <column name="name" value="Jack"/>

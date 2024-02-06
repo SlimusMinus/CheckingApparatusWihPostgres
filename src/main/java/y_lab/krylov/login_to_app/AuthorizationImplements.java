@@ -8,11 +8,35 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Scanner;
-
+/**
+ * check authorization user*/
 public class AuthorizationImplements implements Authorization {
+
+    /**
+     * login - login user */
     private String login;
+    /**
+     * password - login password */
     private String password;
+    /**
+     * user id from database*/
     private static int user_id;
+
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
     public static int getUser_id() {
         return user_id;
@@ -30,7 +54,6 @@ public class AuthorizationImplements implements Authorization {
 
     @Override
     public boolean IsAuthorization() {
-        input_data();
         GetAllUsers getAllUsers = new GetAllUsersImplements();
         try {
             ResultSet resultSet = getAllUsers.getAllUsers();
