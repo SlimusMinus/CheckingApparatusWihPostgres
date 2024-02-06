@@ -54,7 +54,6 @@ public class AuthorizationImplements implements Authorization {
 
     @Override
     public boolean IsAuthorization() {
-        input_data();
         GetAllUsers getAllUsers = new GetAllUsersImplements();
         try {
             ResultSet resultSet = getAllUsers.getAllUsers();

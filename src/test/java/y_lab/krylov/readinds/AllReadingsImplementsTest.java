@@ -8,5 +8,6 @@ class AllReadingsImplementsTest {
 
     @Test
     void getAllReadings() {
+
     }
 }

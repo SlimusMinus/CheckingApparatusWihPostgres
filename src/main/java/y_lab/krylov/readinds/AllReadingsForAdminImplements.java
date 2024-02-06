@@ -1,7 +1,6 @@
 package y_lab.krylov.readinds;
 
 import y_lab.krylov.database.GetConnection;
-import y_lab.krylov.login_to_app.AuthorizationImplements;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

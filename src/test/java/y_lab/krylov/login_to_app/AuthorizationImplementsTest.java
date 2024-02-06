@@ -10,17 +10,32 @@ import static org.junit.jupiter.api.Assertions.*;
 class AuthorizationImplementsTest {
 
     AuthorizationImplements authorization;
-    String login;
-    String password;
     @BeforeEach
     void setUser(){
         authorization = new AuthorizationImplements();
-        login = "admin";
-        password = "admin";
     }
     @Test
     @DisplayName("check enter in database")
     void isAuthorization() {
-        assertThat(true).isTrue();
+        authorization.setLogin("admin");
+        authorization.setPassword("admin");
+        assertThat(authorization.IsAuthorization()).isTrue();
     }
+
+    @Test
+    @DisplayName("check login")
+    void checkLogin() {
+        authorization.setLogin("wrong login");
+        authorization.setPassword("admin");
+        assertThat(authorization.IsAuthorization()).isFalse();
+    }
+
+    @Test
+    @DisplayName("check password")
+    void checkPassword() {
+        authorization.setLogin("admin");
+        authorization.setPassword("wrong password");
+        assertThat(authorization.IsAuthorization()).isFalse();
+    }
+
 }

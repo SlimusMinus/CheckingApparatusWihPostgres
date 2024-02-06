@@ -27,6 +27,7 @@ public class App {
             choice = StartUp.getChoice();
             if (choice == 1) {
                 Authorization authorization = new AuthorizationImplements();
+                authorization.input_data();
                 if (authorization.IsAuthorization()) {
                     System.out.println("Input your choice");
                     System.out.println("1 - obtaining current meter readings");
